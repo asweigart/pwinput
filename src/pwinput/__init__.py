@@ -3,7 +3,7 @@ By Al Sweigart al@inventwithpython.com
 
 A cross-platform Python module that displays **** for password input. Works on Windows, unlike getpass. Formerly called stdiomask."""
 
-__version__ = '1.0.0'  # type: str
+__version__ = '1.0.2'  # type: str
 
 import sys
 
