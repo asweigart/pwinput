@@ -27,6 +27,7 @@ setup(
     long_description_content_type="text/markdown",
     license="MIT",
     packages=find_packages(where="src"),
+    package_data={"pwinput": ["py.typed"]},
     package_dir={"": "src"},
     test_suite="tests",
     install_requires=[],
