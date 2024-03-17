@@ -92,6 +92,8 @@ def pwinput(prompt='Password: ', mask='*'):
                     sys.stdout.write('\b \b')  # \b doesn't erase the character, it just moves the cursor back.
                 sys.stdout.flush()
                 enteredPassword = enteredPassword[:-1]
+        elif key == 3:  # ctrl-c pressed
+            raise KeyboardInterrupt
         elif 0 <= key <= 31:
             # Do nothing for unprintable characters.
             # TODO: Handle Esc, F1-F12, arrow keys, home, end, insert, del, pgup, pgdn
